@@ -1,0 +1,38 @@
+﻿/* 
+    dark-theme.css - Dark Theme Stylesheet
+    Changes made:
+    - Changed background colors to dark tones.
+    - Updated text colors for contrast.
+    - Adjusted button styles to fit the dark theme.
+*/
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+}
+
+#themeToggle {
+    background-color: #4caf50;
+}
+
+    #themeToggle:hover {
+        background-color: #388e3c;
+    }
+
+.main-content {
+    background-color: #1e1e1e;
+}
+
+footer {
+    background-color: #333;
+    color: #e0e0e0;
+}

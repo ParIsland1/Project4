@@ -1,0 +1,227 @@
+﻿/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a5acd;
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav {
+    margin-left: 20px; /* Add space between the logo and navigation */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+#themeToggle {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+    #themeToggle:hover {
+        background-color: #ff4500;
+    }
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px; /* Adding rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visual appeal */
+}
+
+/* Home Content */
+.home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-text {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.home-video {
+    flex: 1;
+    max-width: 45%;
+}
+
+    .home-video video {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+/* Gallery Section */
+#gallery {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+    #gallery h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #333;
+    }
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.brows-photo {
+    flex: 0 1 calc(33% - 20px); /* Updated to make images larger with 3 per row */
+    max-width: calc(33% - 20px);
+    margin-bottom: 20px;
+}
+
+    .brows-photo img {
+        width: 100%;
+        height: 250px; /* Increased height to make images more prominent */
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+        .brows-photo img:hover {
+            transform: scale(1.05);
+        }
+
+/* Contact & Services Content */
+.contact-content, .services-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 20px;
+}
+
+.contact-text, .services-text {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.contact-photo, .services-photo {
+    flex: 1;
+    max-width: 400px;
+}
+
+    .contact-photo img, .services-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+/* Footer Section */
+footer {
+    background-color: #6a5acd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+    footer a {
+        color: #ff6347;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-content, .services-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-photo, .services-photo {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+    }
+
+    .brows-photo {
+        width: 80%;
+    }
+}
